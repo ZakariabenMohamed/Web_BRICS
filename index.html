@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRICS+ - Accueil</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <h1 onclick="showsurprise()">
+            <img src="logo.png" alt="Logo BRICS" class="logo" width="200px" height="100px">
+        </h1>
+        
+        <div id="surprise" style="display: none;/*cache l'élément*/ background: #2a7998; color: white; padding: 20px; margin: 10px; border-radius: 10px; text-align: center;">
+            <h3>Le Saviez-vous ?</h3>
+            <p>Les BRICS+ représentent <strong>11 pays</strong> et <strong>45% de la population mondiale</strong> !</p>
+            <button onclick="hidesurprise()" style="background: white; color: #000000; border: none; padding: 5px 15px; border-radius: 5px; cursor: pointer;">Fermer</button>
+        </div>
+        
+
+
+
+
+        <script>
+        function showsurprise() {
+            document.getElementById('surprise').style.display = 'block';/*Affiché comme un bloc*/
+        }
+        
+        function hidesurprise() {
+            document.getElementById('surprise').style.display = 'none';/*Cache l'élément*/
+        }
+        </script>
+        
+        <style>
+            h1 {
+                cursor: pointer;/*Change le curseur en main quand on survole le titre*/
+            }
+        </style>
+            
+
+
+
+
+
+            
+            <img src="logobrics.png" alt="Logo BRICS" width="135px" height="115px" id="logobrics"> 
+    </header>
+
+   
+    <nav>
+        <ul>
+            <!----><li><a href="index.html" class="active" >Accueil</a></li>
+            <li><a href="origine.html">Origine</a></li>
+            <li><a href="objectif.html">Objectifs</a></li>
+            <li><a href="impact.html">Impact Économique</a></li>
+        </ul>
+    </nav>
+    <section class="stats-section">
+        <h2>Les BRICS+ en Chiffres </h2>
+        <div class="stats-animees">
+            <div class="stat-item">
+                <div class="stat-number" data-count="45">45</div>
+                <div class="stat-label">% Population Mondiale</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="30">30</div>
+                <div class="stat-label">% PIB Mondial</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="11">11</div>
+                <div class="stat-label">Pays Membres</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="presentation">
+        <h2>Qu'est-ce que les BRICS+ ?</h2>
+        <div class="presentation-content">
+            <div class="text-content">
+                <p>Les <strong>BRICS+</strong> représentent une alliance stratégique de pays émergents qui cherchent à remodeler l'ordre mondial. Initialement composé du Brésil, de la Russie, de l'Inde, de la Chine et de l'Afrique du Sud, le groupe s'est élargi en 2023 pour inclure l'Égypte, l'Éthiopie, l'Iran, les Émirats Arabes Unis et l'Indonésie.</p>
+                
+                <p>Avec <strong>plus de 40% de la population mondiale</strong> et environ <strong>30% du PIB mondial</strong>, les BRICS+ constituent une force économique et politique croissante qui défie la domination traditionnelle des économies occidentales.</p>
+                
+                <p>Cette alliance vise à créer des alternatives aux institutions internationales existantes et à promouvoir un modèle de développement plus équitable entre les nations émergentes.</p>
+            </div>
+            <div class="imgc">
+                <img src="carte.png" alt="Carte géographique des pays BRICS+" width="50%" height="50%">
+                <p >Les pays membres des BRICS+</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="timeline">
+        <h2>Dates Clés de l'Évolution des BRICS</h2>
+        <div class="table-container">
+            <table border="2" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th bgcolor="#2c3e50" style="color: white;">Date</th>
+                        <th bgcolor="#2c3e50" style="color: white;">Événement</th>
+                        <th bgcolor="#2c3e50" style="color: white;">Détails</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="2001">
+                        <td><strong>2001</strong></td>
+                        <td>Création du concept</td>
+                        <td>Jim O'Neill de Goldman Sachs invente l'acronyme BRIC pour désigner les quatre principales économies émergentes</td>
+                    </tr>
+                    <tr id="2006">
+                        <td><strong>2006</strong></td>
+                        <td>Première réunion</td>
+                        <td>Première rencontre des ministres des Affaires étrangères en marge de l'Assemblée générale de l'ONU</td>
+                    </tr>
+                    <tr id="2009">
+                        <td><strong>2009</strong></td>
+                        <td>Premier sommet officiel</td>
+                        <td>Premier sommet officiel à Iekaterinbourg, Russie, marquant le début de la coopération formelle</td>
+                    </tr>
+                    <tr id="2011">
+                        <td><strong>2011</strong></td>
+                        <td>Adhésion de l'Afrique du Sud</td>
+                        <td>Les BRIC deviennent BRICS avec l'ajout de l'Afrique du Sud lors du sommet de Sanya</td>
+                    </tr>
+                    <tr id="2014">
+                        <td><strong>2014</strong></td>
+                        <td>Création de la NBD</td>
+                        <td>Fondation de la Nouvelle Banque de Développement lors du sommet de Fortaleza</td>
+                    </tr>
+                    <tr id="2023">
+                        <td><strong>2023</strong></td>
+                        <td>Expansion historique</td>
+                        <td>6 nouveaux pays invités à rejoindre les BRICS lors du sommet de Johannesburg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+
+   
+    
+    <footer>
+        <h3>Sources et Références </h3>
+        
+        <div class="footer">
+            <ul>
+                <li><a href="https://fr.wikipedia.org/wiki/BRICS" target="_blank">Wikipedia BRICS  </a></li>
+                <li><a href="https://www.lemonde.fr/international/" target="_blank">Le Monde International</a></li>
+                <li><a href="https://www.brics.org/" target="_blank">Site Officiel BRICS</a></li>
+                <li><a href="https://www.imf.org/">Fonds Monétaire International</a></li>
+            </ul>
+        </div>
+    
+    </footer>
+</body>
+</html>
